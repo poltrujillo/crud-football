@@ -39,7 +39,8 @@ class PlayerController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'position' => 'required',
+            'team' => 'required',
         ]);
 
         Player::create($request->all());
@@ -80,7 +81,8 @@ class PlayerController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'detail' => 'required',
+            'position' => 'required',
+            'team' => 'required',
         ]);
         $player->update($request->all());
         return redirect()->route('players.index')

@@ -16,19 +16,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Name:</strong>
-                {{ $product->name }}
+                {{ $player->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Position:</strong>
-                {{ $product->position }}
+                {{ $player->position }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Team:</strong>
-                {{ $product->team }}
+                {{ $player->team }}
             </div>
         </div>
     </div>
