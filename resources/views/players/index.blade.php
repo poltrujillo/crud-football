@@ -31,7 +31,8 @@
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $player->name }}</td>
-            <td>{{ $player->detail }}</td>
+            <td>{{ $player->position }}</td>
+            <td>{{ $player->team }}</td>
             <td>
                 <form action="{{ route('players.destroy',$player->id) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('players.show',$player->id) }}">Show</a>
